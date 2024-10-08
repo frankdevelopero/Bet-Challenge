@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Apuesta total</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="dont_have_account">¿No tienes una cuenta? ¡Qué esperas!</string>
+    <string name="email_or_user">Usuario o Email</string>
+    <string name="signin">INICIA SESIÓN</string>
+    <string name="password">Contraseña</string>
+    <string name="go_signin">INGRESA</string>
+    <string name="welcome">BIENVENIDO A</string>
+    <string name="signup_here">¡REGÍSTRATE AQUÍ!</string>
+    <string name="todo">TODO</string>
+
+
+    <string name="title_home">Inicio</string>
+    <string name="title_history">Mis apuestas</string>
+    <string name="title_account">Mi cuenta</string>
+    <string name="label_select">Selecciona</string>
+    <string name="bet_status">Estado de la apuesta:</string>
+    <string name="label_search">Buscar...</string>
+    <string name="bet">Apuesta</string>
+    <string name="quots">Cuotaas totales</string>
+    <string name="payment">Pago</string>
+</resources>

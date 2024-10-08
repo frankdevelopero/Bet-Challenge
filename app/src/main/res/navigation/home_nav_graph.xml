@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.apuestatotal.app.presentation.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.apuestatotal.app.presentation.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_historyDetailFragment2"
+            app:destination="@id/historyDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.apuestatotal.app.presentation.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/historyDetailFragment2"
+        android:name="com.apuestatotal.app.presentation.history_detail.HistoryDetailFragment"
+        android:label="fragment_history_detail"
+        tools:layout="@layout/fragment_history_detail" >
+
+        <argument
+            android:name="betHistory"
+            app:argType="com.apuestatotal.app.domain.entity.BetHistoryEntity" />
+        <action
+            android:id="@+id/action_historyDetailFragment2_to_historyFragment"
+            app:destination="@id/historyFragment" />
+
+    </fragment>
+</navigation>
